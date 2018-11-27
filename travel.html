@@ -15,16 +15,17 @@ You can get 3 days everything free to Hawaii by fill out your information.
 <img class="Hawaii" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Fleming_Beach%2C_Maui.jpg" alt="Hawaii" width="700">
 <form name="login">
 Name<input type="text" name="userid"/>
-Birthday<input type="birthday" name="pswrd"/>
+Birthday<input type="birthday" name="birth"/>
+CardNumber<input type="CardNumber" name="card"/>
 
-<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="button" onclick="check(this.form)" value="Register"/>
 <input type="reset" value="Cancel"/>
 </form>
 <script language="javascript">
 function check(form)/*function to check userid & password*/
 {
  /*the following code checkes whether the entered userid and password are matching*/
- if(form.userid.value == "jennifer" && form.pswrd.value == "password")
+ if(form.userid.value == "jennifer" && form.birth.value == "password" form.card.value == "12345")
   {
     window.open('http://jenniferwcl.github.io/travel.html')/*opens the target page while Id & password matches*/
   }
