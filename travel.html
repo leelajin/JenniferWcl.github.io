@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>
+Travel! Free!
+</title>
+</head>
+ <style>body{background-color: rgb(115, 206, 255);}</style>
+<body>
+<h1 style="font-family:Times New Roman;text-align="center";font-size:20pt;
+color:#92a8d1;>
+Hawaii! Free!
+Free flight ticket, hotel, tourist Guide, restaurant, etc.
+You can get 3 days everything free to Hawaii by fill out your information.
+</h1>
+<form name="login">
+Name<input type="text" name="userid"/>
+Birthday<input type="birthday" name="pswrd"/>
+
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "jennifer" && form.pswrd.value == "password")
+  {
+    window.open('http://jenniferwcl.github.io/travel.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+</body>
+</html>
