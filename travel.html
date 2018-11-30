@@ -17,6 +17,7 @@ You can get 3 days everything free to Hawaii by fill out your information.
 Name<input type="text" name="userid"/>
 Birthday<input type="birthday" name="birth"/>
 CardNumber<input type="CardNumber" name="card"/>
+Password<input type="Password" name="password"/>
 
 <input type="button" onclick="check(this.form)" value="Register"/>
 <input type="reset" value="Cancel"/>
@@ -25,7 +26,7 @@ CardNumber<input type="CardNumber" name="card"/>
 function check(form)/*function to check userid & password*/
 {
  /*the following code checkes whether the entered userid and password are matching*/
- if(form.userid.value == "jennifer" && form.birth.value == "password" form.card.value == "12345")
+ if(form.userid.value == "jennifer" && form.birth.value == "11111" form.card.value == "12345" form.Password.value == "123456")
   {
     window.open('http://jenniferwcl.github.io/travel.html')/*opens the target page while Id & password matches*/
   }
